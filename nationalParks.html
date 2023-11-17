@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Great Outdoors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="banner">
+     <div class="banner">
         <div class="navbar">
-         <img src="https://www.loveoutdoors.org.uk/wp-content/uploads/2022/01/love-outdoors-logo-strap-500x150-1.png" class="logo">
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nationalParks.html">National Parks</a></li>
-            <li><a href="#">Mountains</a></li>
-         </ul>   
+            <img src="https://www.loveoutdoors.org.uk/wp-content/uploads/2022/01/love-outdoors-logo-strap-500x150-1.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nationalParks.html">National Parks</a></li>
+                <li><a href="mountains.html">Mountains</a></li>
+            </ul>
         </div>
     </div>
 
@@ -29,11 +30,7 @@
 
 <h1> More Life</h1>
 
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a class="active" href="nationalParks.html">Exploration</a>
-    </div>
-    
+
     <script>
         window.onload = function() {
             let stateSelectEL = document.getElementById("national-parks");
@@ -6977,6 +6974,7 @@ const locationsArray = [
         let optionEL = new Option(option);
         stateSelectEL.appendChild(optionEL)
         }
+        
         for (let i=0; i < parkTypesArray.length; i++){
             let parkTypeOption = parkTypesArray[i];
             let parkOptionEL = new Option(parkTypeOption);
